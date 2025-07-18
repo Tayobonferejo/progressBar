@@ -1,0 +1,129 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.line {
+    width: 70px;
+    height: 10px;
+    border: 1px solid black;
+}
+
+#button {
+    display: flex;
+    gap: 2rem;
+}
+
+#button > div {
+    width: 80px;
+    height: 40px;
+    background-color: brown;
+    margin-top: 2rem;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration : none;
+    color: white;
+}
+
+.circle:first-child{
+    background-color: aqua;
+}
+
+#button {
+  background-color: black;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 1s ease-in-out;
+} */
+
+/* Container styling */
+.container {
+  width: 300px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+/* Button */
+.trigger {
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  background-color: #444;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Progress Bar Wrapper */
+.progress-bar {
+  position: relative;
+  height: 15px;
+  background-color: #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* The animated fill */
+.progress-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to right, black 50%, transparent 50%);
+  background-size: 200% 100%;
+  background-position: left;
+  transition: background-position 2s ease-in-out;
+}
+
+/* The animated fill */
+.progress-fill-right {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to right, black 50%, transparent 50%);
+  background-size: 200% 100%;
+  background-position: right;
+  transition: background-position 2s ease-in-out;
+}
+
+/* When the progress bar is active */
+.progress-bar.active .progress-fill {
+  background-position: right;
+}
+
+#button {
+  display: flex;
+  justify-content: space-between;
+}
