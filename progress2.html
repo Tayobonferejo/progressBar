@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Progress Bar Example - Approach 2</title>
+</head>
+
+<body>
+    <h2>Progress Bar - Approach 2</h2>
+
+    <progress id="progress" value="0" max="100"></progress>
+
+    <button onclick="increaseProgress()">Increase Progress</button>
+    <button onclick="resetProgress()">Reset</button>
+
+    <script>
+        const progressElement = document
+            .getElementById("progress");
+
+        function increaseProgress() {
+            if (progressElement.value < 100) {
+                progressElement.value += 10;
+            }
+        }
+
+        function resetProgress() {
+            progressElement.value = 0;
+        }
+    </script>
+</body>
+
+</html>

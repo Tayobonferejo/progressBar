@@ -3,85 +3,38 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 /* body {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
-}
+} */
 
-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.circle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid black;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-}
-
-.line {
-    width: 70px;
-    height: 10px;
-    border: 1px solid black;
-}
 
 #button {
-    display: flex;
-    gap: 2rem;
-}
-
-#button > div {
-    width: 80px;
-    height: 40px;
-    background-color: brown;
-    margin-top: 2rem;
-    border-radius: 10px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   display: flex;
+   justify-content: center;
+   gap: 2rem;
+   margin-top: 2rem;
 }
 
 a {
-    text-decoration : none;
+    text-decoration :none;
     color: white;
+    background: #444;
+    padding: 1rem;
 }
-
-.circle:first-child{
-    background-color: aqua;
-}
-
-#button {
-  background-color: black;
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 1s ease-in-out;
-} */
 
 /* Container styling */
 .container {
   width: 300px;
   margin: 50px auto;
   text-align: center;
+  /* display: flex; */
 }
 
-/* Button */
-.trigger {
-  padding: 10px 20px;
-  margin-bottom: 20px;
-  background-color: #444;
-  color: white;
-  border: none;
-  cursor: pointer;
-}
 
 /* Progress Bar Wrapper */
 .progress-bar {
@@ -123,7 +76,14 @@ a {
   background-position: right;
 }
 
-#button {
+
+#Bar {
   display: flex;
-  justify-content: space-between;
+}
+#Bar > div {
+   height: 20px;
+   width: 150px;
+   border-radius: 10px;
+   background-color: green;
+   border: 2px solid black;
 }

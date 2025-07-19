@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Progress Bar Example</title>
+    <style>
+      .progress-bar {
+        width: 500px;
+        background-color: #f0f0f0;
+        height: 30px;
+        margin-bottom: 10px;
+        border-radius: 15px;
+      }
+
+      .progress {
+        width: 0px;
+        height: 100%;
+        background-color: #4caf50;
+        transition: width 0.3s ease;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2>Progress Bar</h2>
+
+    <div class="progress-bar">
+      <div id="progress" class="progress"></div>
+    </div>
+
+    <button onclick="increaseProgress()">Increase Progress</button>
+    <button onclick="resetProgress()">Reset</button>
+
+    <script>
+      const progressBar = document.getElementById("progress");
+      let currentProgress = 0;
+
+      function increaseProgress() {
+        if (currentProgress < 100) {
+          currentProgress += 10;
+          progressBar.style.width = currentProgress + "px";
+        }
+      }
+
+    //   function resetProgress() {
+    //     currentProgress = 0;
+    //     progressBar.style.width = "0px";
+    //   }
+      function resetProgress(){
+        if (currentProgress > 0) {
+          currentProgress -= 10;
+          progressBar.style.width = currentProgress + "px";
+        }
+      }
+
+      console.log(currentProgress);
+    </script>
+  </body>
+</html>

@@ -14,4 +14,4 @@
         if(showCase.classList.contains("active")){
             showCase.classList.remove('active');
         }
-    })
+    }) 
